@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+.homeButton{
+    grid-area: home;
+    text-decoration: none;
+    color: orchid;
+}
+
+.aboutButton{
+    grid-area: about;
+    text-decoration: none;
+    color: orchid;
+}
+
+.meButton{
+    grid-area: me;
+    text-decoration: none;
+    color: orchid;
+}
+
+.projectsButton{
+    grid-area: projects;
+    text-decoration: none;
+    color: orchid;
+}
+
+.resumeButton{
+    grid-area: resume;
+    text-decoration: none;
+    color: orchid;
+}
+
+.header{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'home about me projects resume';
+}
