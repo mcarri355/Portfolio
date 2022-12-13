@@ -5,37 +5,93 @@ body{
     grid-area: home;
     text-decoration: none;
     color: orchid;
+    font-size: 125%;
 }
 
 .aboutButton{
     grid-area: about;
     text-decoration: none;
     color: orchid;
+    font-size: 125%;
 }
 
-.meButton{
-    grid-area: me;
+.contactButton{
+    grid-area: contact;
     text-decoration: none;
     color: orchid;
+    font-size: 125%;
 }
 
 .projectsButton{
     grid-area: projects;
     text-decoration: none;
     color: orchid;
+    font-size: 125%;
 }
 
 .resumeButton{
     grid-area: resume;
     text-decoration: none;
     color: orchid;
+    font-size: 125%;
 }
 
-.header{
+.intro{
+    grid-area: intro;
+    color: orchid;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.nameSize{
+    font-size: 500%;
+    font-weight: bolder;
+}
+
+.descSize {
+    font-size: 200%;
+}
+
+.footer {
+    grid-area: footer;
+}
+.homePage{
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    'home about me projects resume';
+    '. home about contact resume projects .'
+    'intro intro intro intro intro intro intro'
+}
+
+.aboutPicture{
+    grid-area: pic;
+}
+
+.aboutName{
+    grid-area: name;
+}
+
+.aboutBday{
+    grid-area: bday;
+}
+
+.aboutPlace{
+    grid-area: place
+}
+
+.aboutAge{
+    grid-area: age
+}
+
+.aboutPage{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    '. home about contact resume projects .'
+    '. . . . pic pic .';
 }
