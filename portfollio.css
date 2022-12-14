@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    color: orchid;
 }
 .homeButton{
     grid-area: home;
@@ -40,7 +41,8 @@ body{
     grid-area: intro;
     color: orchid;
     text-align: center;
-    margin-top: 20%;
+    margin: auto;
+    width: 50%;
 }
 
 .nameSize{
@@ -55,43 +57,107 @@ body{
 .footer {
     grid-area: footer;
 }
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
 .homePage{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    '. home about contact resume projects .'
     'intro intro intro intro intro intro intro'
 }
 
 .aboutPicture{
     grid-area: pic;
+    width: 85%;
+    height: 85%;
+    justify-self: center;
 }
 
 .aboutName{
     grid-area: name;
+    text-align: left;
 }
 
 .aboutBday{
     grid-area: bday;
+    text-align: left;
 }
 
 .aboutPlace{
-    grid-area: place
+    grid-area: place;
+    text-align: left;
 }
 
 .aboutAge{
-    grid-area: age
+    grid-area: age;
+    text-align: left;
+}
+
+.aboutPhone{
+    grid-area: phone;
+    text-align: left;
+}
+
+.aboutEmail{
+    grid-area: email;
+    text-align: left;
+}
+
+.aboutEducation{
+    grid-area: edu;
+    text-align: left;
+}
+
+.aboutProfile{
+    grid-area: profile;
+    text-align: left;
+}
+
+.aboutTitle{
+    grid-area: aboutTitle;
+    padding-bottom: 5vh;
+    font-size: xx-large;
+}
+
+.hr{
+    border: .13vh solid limegreen;
+}
+
+.aboutDesc{
+    grid-area: desc;
+    border: .25vh solid limegreen;
+    border-radius: 2vh;
+    padding: 1vh;
 }
 
 .aboutPage{
     display: grid;
     text-align: center;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    '. home about contact resume projects .'
-    '. . . . pic pic .';
+    '. . aboutTitle aboutTitle . .'
+    '. aboutMe aboutMe pic pic .'
+    '. aboutMe aboutMe pic pic .'
+    '. aboutMe aboutMe pic pic .'
+    '. aboutMe aboutMe pic pic .'
+    '. desc desc desc desc .';
+}
+
+.aboutPage2{
+    display: grid;
+    grid-area: aboutMe;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'name bday'
+    'place age'
+    'phone email'
+    'edu profile';
 }
