@@ -1,45 +1,45 @@
 body{
     background-color: black;
-    color: orchid;
+    color: white;
 }
 .homeButton{
     grid-area: home;
     text-decoration: none;
-    color: orchid;
+    color: white;
     font-size: 125%;
 }
 
 .aboutButton{
     grid-area: about;
     text-decoration: none;
-    color: orchid;
+    color: white;
     font-size: 125%;
 }
 
 .contactButton{
     grid-area: contact;
     text-decoration: none;
-    color: orchid;
+    color: white;
     font-size: 125%;
 }
 
 .projectsButton{
     grid-area: projects;
     text-decoration: none;
-    color: orchid;
+    color: white;
     font-size: 125%;
 }
 
 .resumeButton{
     grid-area: resume;
     text-decoration: none;
-    color: orchid;
+    color: white;
     font-size: 125%;
 }
 
 .intro{
     grid-area: intro;
-    color: orchid;
+    color: white;
     text-align: center;
     margin: auto;
     width: 50%;
@@ -66,10 +66,10 @@ body{
 .homePage{
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    'intro intro intro intro intro intro intro'
+    'intro intro intro intro intro intro'
 }
 
 .aboutPicture{
@@ -126,33 +126,18 @@ body{
 }
 
 .hr{
-    border: .13vh solid limegreen;
+    border: .13vh solid gray;
 }
 
 .aboutDesc{
     grid-area: desc;
-    border: .25vh solid limegreen;
+    border: .25vh solid gray;
     border-radius: 2vh;
     padding: 1vh;
 }
 
-.aboutPage{
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    '. . aboutTitle aboutTitle . .'
-    '. aboutMe aboutMe pic pic .'
-    '. aboutMe aboutMe pic pic .'
-    '. aboutMe aboutMe pic pic .'
-    '. aboutMe aboutMe pic pic .'
-    '. desc desc desc desc .';
-}
-
 .aboutPage2{
     display: grid;
-    grid-area: aboutMe;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -160,4 +145,34 @@ body{
     'place age'
     'phone email'
     'edu profile';
+    grid-area: aboutMe;
+}
+
+.aboutPage {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        '. . aboutTitle aboutTitle . .'
+        '. name bday pic pic .'
+        '. place age pic pic .'
+        '. phone email pic pic .'
+        '. edu profile pic pic .'
+        '. desc desc desc desc .';
+}
+.projectTitle{
+    grid-area: projectTitle;
+}
+
+
+
+.projectPage{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    '. projectTitle .'
+    '';
 }
