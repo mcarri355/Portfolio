@@ -136,17 +136,6 @@ body{
     padding: 1vh;
 }
 
-.aboutPage2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    'name bday'
-    'place age'
-    'phone email'
-    'edu profile';
-    grid-area: aboutMe;
-}
 
 .aboutPage {
     display: grid;
@@ -165,10 +154,16 @@ body{
     grid-area: projectTitle;
 }
 
+.projectPictures{
+    width: 75vh;
+    height: 50vh;
+    padding: 1%;
+    border-radius: 10%;
 
+}
 
 .projectPage{
     display: flex;
-    text-align: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
