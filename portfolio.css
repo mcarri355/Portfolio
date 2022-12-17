@@ -60,6 +60,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-evenly;
+    position: sticky;
     
 
 }
@@ -166,4 +167,21 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+fieldset{
+    border: none;
+}
+
+.contactPage{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    '. contactTitle .'
+    'social social social'
+    'contactLocation contactDivide .'
+    'contactEmail contactDivide .'
+    'contactPhone contactDivide .';
 }
