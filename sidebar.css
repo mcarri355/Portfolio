@@ -8,9 +8,9 @@
 
 nav{
     background: #1D2951;
-    line-height: 80px;
     position: fixed;
     width: 100%;
+    display: none;
 }
 
 label{
@@ -22,12 +22,6 @@ label{
     margin-top: 50px;
     cursor: pointer;
 }
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
 nav ul li{
     line-height: 80px;
     margin: 0 10px;
@@ -43,7 +37,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: rgb(208, 95, 8);    
+    background: rgb(208, 121, 78);    
     color: white;
     transition: .5s;
 }
@@ -51,9 +45,23 @@ nav ul li a:hover{
 .side-menu{
     position: fixed;
     background: #1D2951;
-    width: 250px;
+    width: 15%;
     height: 100%;
-    margin-top: 80px;
+    grid-area: side;
+}
+
+.data{
+    grid-area: data;
+    display: block;
+}
+
+.container{
+    display: grid;
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'side data';
 }
 
 .side-menu center img{
@@ -130,6 +138,10 @@ margin-right: 20px;
 }
 
 @media (max-width:650px){
+    nav{
+        display: block;
+    }
+
     nav ul{
         display: none;
     }
@@ -137,6 +149,7 @@ margin-right: 20px;
         width: 100%;
         text-align: center;
         left: 100%;
+        margin-top: 80px;
         background-color: darkgray;
         transition: all .5s;
     }
