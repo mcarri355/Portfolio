@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.sideMenu center img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+.sideMenu center h2 {
+    color: white;
+}
+
+.sideMenu{
+    grid-area: side;
+    background-color: #1D2951;
+}
+
+.sideMenu a{
+    display: block;
+    line-height: 60px;
+    transition: .5s;
+    color: white;
+}
+
+
+.sideMenu a:hover {
+    background: rgb(208, 95, 8);
+    padding-left: 20px;
+}
+
+.homePage{
+    grid-area: data;
+    text-align: center;
+    background-color: rgb(173, 173, 173);
+}
+
+.aboutPage {
+    grid-area: data;
+    text-align: center;
+    background-color: rgb(173, 173, 173);
+}
+
+.homePagePic{
+    width: 75%;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'side data data'
+}
+
+.aboutTitle{
+    grid-area: aboutTitle;
+    color: white;
+    font-size: 35px;
+}
+
+.aboutHR{
+    border: 1px solid rgb(208, 95, 8);
+}
+.aboutPic{
+    grid-area: aboutPic;
+}
+
+.aboutPicSize{
+    width: 50%;
+height: 75%;
+}
+
+.age{
+    grid-area: age;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.bday{
+    grid-area: bday;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.bplace{
+    grid-area: bplace;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.hobby{
+    grid-area: hobby;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.edu{
+    grid-area: edu;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.exp{
+    grid-area: exp;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.desc{
+    grid-area: desc;
+    border: 1px solid rgb(208, 95, 8);
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+.skills{
+    grid-area: skills;
+    color: white;
+    font-size: 35px;
+}
+
+.skillBars{
+    grid-area: skillBars;
+}
+
+.skillLogos{
+    grid-area: logo;
+}
+.skillBarContainer {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.bar {
+    background-color: rgb(208, 95, 8);
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.htmlSkill {
+    width: 80%;
+}
+
+.jsSkill {
+    width: 70%;
+}
+
+
+.cssSkill {
+    width: 75%;
+}
+
+
+.aboutPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(173, 173, 173);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    '. aboutTitle .'
+    'aboutPic age bday'
+    'aboutPic bplace hobby'
+    'aboutPic edu exp'
+    'desc desc desc'
+    '. skills .'
+    'logo . skillBars';
+}
+
+.sideMenu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white
+}
+
+.sideMenu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+.nav {
+    background: #1D2951;
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+
+label {
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.nav .menu-bar {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .sideMenu a span {
+        display: none;
+    }
+
+    .sideMenu center {
+        display: none;
+    }
+
+    .sideMenu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:650px) {
+    .nav {
+            display: block;
+            grid-area: nav;
+        }
+    
+    .sideMenu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        margin-top: 80px;
+        background-color: darkgray;
+        transition: all .5s;
+    }
+
+    .sideMenu a i {
+        display: none;
+    }
+
+    .sideMenu a span {
+        display: inline;
+    }
+
+
+    label{
+        display: none;
+    }
+
+    .sideMenu{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'nav nav nav'
+        'data data data';
+    }
+    }
+
+#menu:checked~.side-menu {
+    left: 0;
+    
+}

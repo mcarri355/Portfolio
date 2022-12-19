@@ -5,41 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <input type="checkbox" id="menu">
-    <nav>
-        <label for="">
-            Matthew Carrillo
-        </label>
-        <label for="menu" class="menu-bar">
-            <i class="fa fa-bars"></i>
-        </label>
-    </nav>
-    <div class="side-menu">
-        <center>
-            <img src="aboutPic.webp" alt="">
-            <br>
-            <h2>Matthew Carrillo</h2>
-        </center>
-        <br>
-        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
-        <a href="about.html"><i class="fa fa-user"></i><span>About</span></a>
-        <a href="contact.html"><i class="fa fa-envelope-o"></i><span>Contact</span></a>
-        <a href="resume.html"><i class="fa fa-file-text-o"></i><span>Resume</span></a>
-        <a href="projects.html"><i class="fa fa-folder-open-o"></i><span>Projects</span></a>
-        <a href=""><i class="fa fa-twitter"></i><span>Twitter</span></a>
-        <a href=""><i class="fa fa-instagram"></i><span>Instagram</span></a>
-        <a href=""><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
-        <div class="logout">
-            <a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-instagram"></i></a><a href=""><i
-                    class="fa fa-linkedin"></i></a>
+    <div class="container">
+        <div class="nav">
+            <label for="menu" class="menu-bar">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu">
+            <label for="">
+                Matthew Carrillo
+            </label>
+        </div>
+        <div class="sideMenu">
+            <center class="image">
+                <img src="aboutPic.webp" alt="" class="picture">
+                <br>
+                <h2>Matthew Carrillo</h2>
+            </center>
+            <a href="index.html" class="home"><i class="fa fa-home"></i><span>Home</span></a>
+            <a href="about.html" class="about"><i class="fa fa-user"></i><span>About</span></a>
+            <a href="contact.html" class="contact"><i class="fa fa-envelope-o"></i><span>Contact</span></a>
+            <a href="resume.html" class="resume"><i class="fa fa-file-text-o"></i><span>Resume</span></a>
+            <a href="projects.html" class="projects"><i class="fa fa-folder-open-o"></i><span>Projects</span></a>
+            <a href="" class="twitter"><i class="fa fa-instagram"></i><span>Socials</span></a>
+        </div>
+        <div class="aboutPage">
+            <div class="aboutTitle">
+                About Me
+                <hr class="aboutHR">
+            </div>
+            <div class="aboutPic">
+                <img src="aboutPic.webp" alt="" class="aboutPicSize">
+            </div>
+            <div class="age">
+                Age: 16
+            </div>
+            <div class="bday">
+                Birthday: June 12, 2006
+            </div>
+            <div class="bplace">
+                Birthplace: Arizona
+            </div>
+            <div class="hobby">
+                Hobby: Video Games
+            </div>
+            <div class="edu">
+                Education: High School/West-Mec
+            </div>
+            <div class="exp">
+                Experience: 4 months
+            </div>
+            <div class="desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, sit tempore? Cum quos rerum eum similique, repellendus minima corporis soluta. Quae enim odio repellat hic nemo, eius, eveniet vel molestias reiciendis aut dolores quos, ab voluptates ducimus. Minima ut adipisci, delectus exercitationem aliquid veritatis optio blanditiis vero non consectetur dolorem odio dolor ipsum nostrum nemo corporis sint eos vel soluta magnam ratione officia obcaecati recusandae quibusdam. Tenetur iusto accusamus aliquam iure eius, mollitia exercitationem deleniti ratione maxime distinctio fuga nostrum quaerat id voluptatum doloremque doloribus ipsa. Eaque dignissimos libero deserunt inventore quo sapiente. Aperiam, voluptates. Alias, eveniet quibusdam. Velit, quibusdam?
+            </div>
+            <div class="skills">
+                Skills
+                <hr class="aboutHR">
+            </div>
+            <div class="skillBars">
+                <p>HTML</p>
+                <div class="skillBarContainer">
+                    <div class="bar htmlSkill">80%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="skillBarContainer">
+                    <div class="bar jsSkill">70%</div>
+                </div>
+                <p>CSS</p>
+                <div class="skillBarContainer">
+                    <div class="bar cssSkill">75%</div>
+                </div>
+            </div>
+            <div class="skillLogos">
+                <img src="3code.png" alt="">
+            </div>
+
+
         </div>
     </div>
 </body>
-
 </html>
