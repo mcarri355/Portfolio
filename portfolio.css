@@ -16,6 +16,10 @@ body{
     box-sizing: border-box;
 }
 
+.nav{
+    display: none;
+}
+
 .sideMenu center img {
     height: 120px;
     width: 120px;
@@ -79,30 +83,6 @@ body{
     color: white;
 }
 
-.nav {
-    background: #1D2951;
-    position: fixed;
-    width: 100%;
-    display: none;
-}
-
-label {
-    line-height: 80px;
-    font-size: 30px;
-    color: white;
-    font-weight: 200;
-    margin-left: 20px;
-    margin-top: 50px;
-    cursor: pointer;
-}
-
-.nav .menu-bar {
-    display: none;
-}
-
-#menu {
-    display: none;
-}
 
 .container{
     display: grid;
@@ -520,15 +500,21 @@ fieldset{
         'gus gus gus';
         height: 100%;
     }
+    
+    .resumePage{
+        grid-template-areas:
+        '. resumeTitle .'
+        'resumeObjective resumeObjective resumeObjective'
+        'resumeSkills resumeSkills resumeSkills'
+        'resumeExp resumeExp resumeExp'
+        'resumeExtra resumeExtra resumeExtra'
+        'resumeEdu resumeEdu resumeEdu';
+    }
 
 }
 
 @media (max-width:650px) {
-    .nav {
-            display: block;
-            grid-area: nav;
-        }
-    
+
     .sideMenu {
         width: 100%;
         text-align: center;
@@ -538,34 +524,32 @@ fieldset{
         transition: all .5s;
     }
 
-    .sideMenu a i {
-        display: none;
-    }
-
-    .sideMenu a span {
-        display: inline;
-    }
-
-
-    label{
-        display: none;
-    }
-
     .sideMenu{
         display: none;
     }
 
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        'nav nav nav'
-        'data data data';
-    }
+    .nav{
+        display: inline;
     }
 
-#menu:checked~.side-menu {
-    left: 0;
-    
+    .mediaName{
+        grid-area: mediaName;
+    }
+
+    .mediaAbout{
+        grid-area: mediaAbout;
+    }
+
+    .mediaContact{
+        grid-area: mediaContact;
+    }
+
+    .mediaResume{
+        grid-area: mediaResume;
+    }
+
+    .mediaProjects{
+        grid-area: mediaProjects;
+    }
 }
+    
