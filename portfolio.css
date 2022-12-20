@@ -111,7 +111,7 @@ body{
 
 .aboutPicSize{
     width: 50%;
-height: 75%;
+    height: 75%;
 }
 
 .age{
@@ -485,6 +485,50 @@ fieldset{
         font-size: 35px;
     }
 
+
+
+        .aboutPicSize {
+            width: 50%;
+            height: 70%;
+            margin-top: 5%;
+        }
+    
+        .age {
+            display: none;
+        }
+    
+        .bday {
+            display: none;            
+        }
+    
+        .bplace {
+            display: none;
+        }
+    
+        .hobby {
+            display: none;
+        }
+    
+        .edu {
+            display: none;            
+        }
+    
+        .exp {
+            display: none;
+        }
+
+
+    .aboutPage {
+        grid-template-areas: 
+        'aboutTitle aboutTitle aboutTitle'
+        'aboutPic aboutPic aboutPic '
+        'aboutPic aboutPic aboutPic'
+        'aboutPic aboutPic aboutPic'
+        'desc desc desc'
+        '. skills .'
+        'logo skillBars skillBars';
+    }
+
     .projectPictures{
     width: 100%;
     height: 100%;
@@ -511,6 +555,63 @@ fieldset{
         'resumeEdu resumeEdu resumeEdu';
     }
 
+        .contactPhone {
+            grid-area: phone;
+            border-right: none;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+    
+        .contactEmail {
+            grid-area: email;
+            border-right: none;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+    
+        .contactLocation {
+            grid-area: location;
+            border-right: none;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 5%;
+            border-bottom: 2px solid rgb(208, 95, 8);
+        }
+    
+    
+        .messageMe {
+            grid-area: message;
+            border-right: none;
+            border-bottom: 2px solid rgb(208, 95, 8)
+        }
+
+        .contactSumbit{
+            margin-bottom: 5%;
+        }
+
+        .contactSocials{
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+    .contactPage{
+    grid-template-areas: 
+    '. contactTitle .'
+    'phone phone phone '
+    'email email email'
+    'location location location'
+    'message message message'
+    'contactSocials contactSocials contactSocials'
+    'icons icons icons'
+    ;
+    }
+
 }
 
 @media (max-width:650px) {
@@ -522,34 +623,84 @@ fieldset{
         margin-top: 80px;
         background-color: darkgray;
         transition: all .5s;
-    }
-
-    .sideMenu{
         display: none;
     }
 
+
     .nav{
-        display: inline;
+        display: flex;
+        grid-area: media;
+        background-color: #1D2951;
+        color: white;
+        font-size: 25px;
+        line-height: 60px;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+        height: 8%;
     }
 
-    .mediaName{
-        grid-area: mediaName;
+    .resumeTitle {
+        margin-top: 50%;
     }
 
-    .mediaAbout{
-        grid-area: mediaAbout;
+    .contactTitle{
+        margin-top: 50%;
     }
 
-    .mediaContact{
-        grid-area: mediaContact;
+    .projectsTitle{
+        margin-top: 50%;
     }
 
-    .mediaResume{
-        grid-area: mediaResume;
+    .aboutTitle{
+        margin-top: 20%;
     }
 
-    .mediaProjects{
-        grid-area: mediaProjects;
+    .picture{
+        margin-bottom: 10%;
     }
-}
+
+    .homePagePic{
+        width: 100%;
+        height: 100%;
+        margin-top: -100%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'media'
+        'data';
+        height: 100%;
+        width: 100%;
+    }
     
+    .skillBarContainer{
+        display: none;
+    }
+
+    .skillBars{
+        display: none;
+    }
+
+    .skills{
+        display: none;
+    }
+
+    .skillLogos{
+        display: none;
+    }
+
+    .aboutPage {
+        grid-template-areas: 
+        '. aboutTitle aboutTitle'
+        '. aboutPic aboutPic '
+        'aboutPic aboutPic aboutPic'
+        'aboutPic aboutPic aboutPic'
+        'desc desc desc'
+        'logo logo logo';
+    }
+        
+    }
